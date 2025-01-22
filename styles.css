@@ -1,0 +1,760 @@
+html, body { 
+    width: 100vw; 
+    height: 100vh;
+    margin: 0; 
+}
+
+    /* STARTING PAGE */
+
+.startpage { 
+    width: 100vw; 
+    height: 100vh;
+    background-color: #E8FFF6;
+    margin: 0; 
+    position: relative;
+    overflow: hidden;
+    display: block; 
+}
+
+.pjname, .intro, .instruction, .emoji {
+    position: absolute;
+    top: max(0, 10%);
+    left: max(0, 10%);
+    border-radius: 2vw;
+    font-family: "Spline Sans Mono";
+
+}
+
+.pjname { 
+    width: 35vw; 
+    height: 20vh;
+    color: #E523FF; 
+    background-color: white;
+    font-family: "Spline Sans Mono";
+    font-size: 4vw; /* Scales with viewport width */
+    font-weight: 564;
+    line-height: 1.2; /* Scales with font size */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2vw;
+    border: 2px solid #E523FF;
+    position: absolute;
+    top: 20%; left: 10%;
+}
+
+
+.intro { 
+    width: 35vw; 
+    height: auto;
+    background-color: white;
+    color: #00F;
+    font-family: "Spline Sans Mono";
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  126.667%;
+    display: grid; 
+    align-items: center;
+    text-align: left;
+    padding: 2vw; 
+    border-radius: 20px;
+    border: 2px solid #00F;
+    position: absolute; 
+    top: 37%; left: 35%;
+}
+
+.instruction { 
+    width: 15vw; 
+    height: auto; 
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #FFC403; 
+    color: #FFC403; 
+    display: grid; 
+    align-items: center;
+    font-family: "Spline Sans Mono";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    padding: 2vw; 
+
+    position: absolute; 
+    top: 50%; left: 10%;
+}
+
+.emoji { 
+    width: 8vw; 
+    height: 8vw; 
+    display: grid; 
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    font-family: "Spline Sans Mono";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 68.75% */
+    letter-spacing: 14.4px;
+    border-radius: 20px;
+    border: 2px solid #FF23A3;
+    padding-left: 10px;
+    position: absolute; 
+    transition: border-color 0.5s ease; 
+    cursor: pointer;
+}
+
+.emoji:hover { 
+    border: 2px solid #FFC403;
+    transition: border-color 0.5s ease; 
+}
+
+.p1 { 
+    top: 10%; left: 70%;
+}
+
+.p2 { 
+    top: 30%; left: 80%;
+}
+
+.p3 { 
+    top: 50%; left: 80%;
+}
+
+.backtostart, .backtostart2, .backtostart3 { 
+    width: 10vw; 
+    height: auto; 
+    background-color: white;
+    padding: 1vw; 
+    font-family: "Spline Sans Mono";
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  126.667%;
+    color: #E523FF; 
+    border-radius: 20px;
+    border: #E523FF solid 2px; 
+    position: absolute; 
+    top: 3%; left: 2%; 
+    transition: .5s;
+}
+
+.backtostart:hover { 
+    color: #00F;
+    border-color: #00F;
+    transition: .5s;
+    cursor: pointer;
+}
+.backtostart2:hover { 
+    color: #00F;
+    border-color: #00F;
+    transition: .5s;
+    cursor: pointer;
+}
+.backtostart3:hover { 
+    color: #00F;
+    border-color: #00F;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* INTERVIEWEE 1 */
+
+.p1page { 
+    background-color: #F1FFE8;
+    width: 100vw; 
+    height: 100vh;
+    margin: 0; 
+    display: none; 
+    position: relative;
+    overflow: hidden;
+}
+
+.question, .p2question, .p3question {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    width: 5vw;
+    height: auto;
+    font-family: "Spline Sans Mono";
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 564;
+    line-height: normal;
+    padding: 2vw;
+    position: absolute;
+    cursor: pointer;
+    transition: color 0.5s, border-color 0.5s;
+}
+
+.no1, .no4, .p3no1, .p3no4 {
+    color: #E523FF;
+    border: 2px solid #E523FF;
+}
+
+.no2, .no5, .p3no2, .p3no5 {
+    color: #00F;
+    border: 2px solid #00F;
+}
+
+.no3, .no6, .p3no3, .p3no6 { 
+    color: #FF23A3; 
+    border: 2px solid #FF23A3;
+}
+
+.no1 { 
+    top: 20%; left: 15%;
+}
+
+.no2 { 
+    top: 25%; left: 60%;
+}
+
+.no3 { 
+    top: 55%; left: 25%;
+}
+
+.no4 { 
+    top: 70%; left: 60%;
+}
+
+.no5 { 
+    top: 45%; left: 75%;
+}
+
+.no6 { 
+    top: 65%; left: 10%;
+}
+
+
+.q1content, .q2content, .q3content, .q4content, .q5content, .q6content { 
+    width: 20vw;
+    height: auto; 
+    font-family: "Spline Sans Mono";
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  126.667%;
+    background: white; 
+    padding: 2vw;  
+    border-radius: 20px;
+    position: absolute; 
+    display: none; 
+    color: #00F; 
+    border: 2px solid #00F;
+}
+
+.q1content { 
+    top: 16%; left: 15%;
+}
+
+.q2content { 
+    top: 13%; left: 65%; 
+}
+
+.q3content { 
+    top: 40%; left: 5%; 
+}
+
+.q4content { 
+    top: 70%; left: 70%;
+}
+
+.q5content { 
+    top: 40%; left: 50%; 
+}
+
+.q6content { 
+    top: 70%; left: 15%; 
+}
+
+#closeq1, #closea1, #closee1, #closeq2, #closea2, #closee2, #closeq3, #closea3, #closee3, #closeq4, #closeq5, #closeq6, #closea4, #closea5, #closea6, #closee4, #closee5, #closee6 {
+	width: 12px;
+	height: 12px;
+	background: red;
+	border-radius: 50%;
+	margin-top: -15px;
+	margin-left: -15px;
+	display: block;
+	cursor: pointer;
+}
+
+#closee1, #closee2, #closee3, #closee4, #closee5, #closee6  { 
+    margin-bottom: 2vh;
+}
+  
+.answer1, .answer2, .answer3, .answer4, .answer5, .answer6 { 
+    width: 17vw; 
+    height: auto; 
+    background-color: white;
+    padding: 2vw; 
+    font-family: "Spline Sans Mono";
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126.667%;
+    display: none;
+    border-radius: 20px;
+    border: 2px solid #15B362;
+    position: absolute; 
+}
+
+.answer1 { 
+    top: 30%; left: 10%; 
+}
+
+.answer2 { 
+    top: 23%; left: 60%; 
+}
+
+.answer3 { 
+    width: 30vw; 
+    top: 44%; left: 20%; 
+}
+
+.answer4 { 
+    width: 23vw; 
+    top: 40%; left: 50%; 
+}
+
+.answer5 { 
+    width: 27vw; 
+    top: 17%; left: 68%; 
+}
+
+.answer6 { 
+    width: 23vw; 
+    top: 30%; left: 24%; 
+}
+
+.type {
+    /* display: inline-block; */
+    color: #0000; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    background: linear-gradient(#15B362 0%, #15B362 400%);
+    background-size: calc(var(--n) * 1ch) 400%;
+    background-repeat: no-repeat;
+    animation: typing calc(var(--n) * 0.08s) steps(var(--n)) forwards;
+}
+
+@keyframes typing {
+    from { background-size: 0 400%; }
+    to { background-size: calc(var(--n) * 1ch) 400%; }
+}
+
+.clip {
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.step {
+    animation-timing-function: steps(var(--n));
+}
+
+.emojirun1, .emojirun2, .emojirun3, .emojirun4, .emojirun5, .emojirun6 { 
+    display: none; 
+    width: 5vw; 
+    height: auto; 
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #15B362; 
+    position: absolute; 
+    font-size: 35px;
+    padding: 2vw; 
+    text-align: center;
+    position: absolute; 
+}
+
+.emojirun1 { 
+    top: 20%; left: 15%;
+}
+
+.emojirun2 { 
+    top: 25%; left: 60%;
+}
+
+.emojirun3 { 
+    top: 55%; left: 25%;
+}
+
+.emojirun4 { 
+    top: 70%; left: 60%;
+}
+
+.emojirun5 { 
+    top: 45%; left: 75%;
+}
+
+.emojirun6 { 
+    top: 65%; left: 10%;
+}
+
+.p2page { 
+    background-color: #E8F0FF;
+    width: 100vw; 
+    height: 100vh;
+    margin: 0; 
+    display: none; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* PAGE 2 */
+
+.p2no1 { 
+    top: 50%; left: 40%; 
+    color: #00F; 
+    border: 2px solid #00F;
+}
+
+.p2no2 { 
+    top: 30%; left: 80%; 
+    color: #E523FF; 
+    border: 2px solid #E523FF;
+}
+
+.p2no3 { 
+    top: 17%; left: 55%; 
+    color: #FF23A3 ; 
+    border: 2px solid #FF23A3
+}
+
+.p2no4 { 
+    top: 63%; left: 20%; 
+    color: #00F; 
+    border: 2px solid #00F;
+}
+
+.p2no5 { 
+    top: 80%; left: 40%; 
+    color: #E523FF; 
+    border: 2px solid #E523FF;
+}
+
+.p2no6 { 
+    top: 74%; left: 84%; 
+    color: #FF23A3 ; 
+    border: 2px solid #FF23A3
+}
+
+.p2q1content, .p2q2content, .p2q3content, .p2q4content, .p2q5content, .p2q6content, .p3q1content, .p3q2content, .p3q3content, .p3q4content, .p3q5content, .p3q6content { 
+    width: 20vw;
+    height: auto; 
+    font-family: "Spline Sans Mono";
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  126.667%;
+    background: white; 
+    padding: 2vw;  
+    border-radius: 20px;
+    position: absolute; 
+    display: none; 
+    color: #00F; 
+    border: 2px solid #00F;
+}
+
+.p2q1content { 
+    top: 40%; left: 36%; 
+}
+
+.p2q2content { 
+    top: 24%; left: 60%; 
+}
+
+.p2q3content { 
+    top: 13%; left: 29%; 
+}
+
+.p2q4content { 
+    top: 70%; left: 10%; 
+}
+
+.p2q5content { 
+    top: 73%; left: 48%; 
+}
+
+.p2q6content { 
+    top: 49%; left: 58%; 
+}
+
+#p2closeq1, #p2closeq2, #p2closeq3, #p2closeq4, #p2closeq5, #p2closeq6, #closep2a1, #closep2a2, #closep2a3, #closep2a4, #closep2a5, #closep2a6, #p2closee1, #p2closee2, #p2closee3, #p2closee4, #p2closee5, #p2closee6, #p3closeq1, #p3closeq2, #p3closeq3, #p3closeq4, #p3closeq5, #p3closeq6, #closep3a1, #closep3a2, #closep3a3, #closep3a4, #closep3a5, #closep3a6, #p3closee1, #p3closee2, #p3closee3, #p3closee4, #p3closee5, #p3closee6 {
+    width: 12px;
+	height: 12px;
+	background: red;
+	border-radius: 50%;
+	margin-top: -15px;
+	margin-left: -15px;
+	display: block;
+	cursor: pointer;
+}
+
+#p2closee1, #p2closee2, #p2closee3, #p2closee4, #p2closee5, #p2closee6, #p3closee1, #p3closee2, #p3closee3, #p3closee4, #p3closee5, #p3closee6  { 
+    margin-bottom: 2vh;
+}
+
+.p2answer1, .p2answer2, .p2answer3, .p2answer4, .p2answer5, .p2answer6 { 
+    width: 17vw; 
+    height: auto; 
+    background-color: white;
+    padding: 2vw; 
+    font-family: "Spline Sans Mono";
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126.667%;
+    display: none;
+    border-radius: 20px;
+    border: 2px solid #E523FF;
+    position: absolute; 
+}
+
+.p2answer5, .p2answer6 { 
+    width: 25vw; 
+}
+
+.p2answer1 { 
+    top: 45%; left: 47%; 
+}
+
+.p2answer2 { 
+    top: 20%; left: 77%; 
+}
+
+.p2answer3 { 
+    top: 10%; left: 37%; 
+}
+
+.p2answer4 { 
+    top: 60%; left: 3%; 
+}
+
+.p2answer5 { 
+    top: 60%; left: 33%; 
+}
+
+.p2answer6 { 
+    top: 48%; left: 67%; 
+}
+
+.type2 {
+    color: #0000; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    background: linear-gradient(#E523FF 0%, #E523FF 400%);
+    background-size: calc(var(--n) * 1ch) 400%;
+    background-repeat: no-repeat;
+    animation: typing calc(var(--n) * 0.08s) steps(var(--n)) forwards;
+}
+
+.clip2 {
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.p2emojirun1, .p2emojirun2, .p2emojirun3, .p2emojirun4, .p2emojirun5, .p2emojirun6  { 
+    display: none; 
+    width: 5vw; 
+    height: auto; 
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #E523FF; 
+    position: absolute; 
+    font-size: 35px;
+    padding: 2vw; 
+    text-align: center;
+    position: absolute; 
+}
+
+.p2emojirun1 { 
+    top: 50%; left: 40%; 
+}
+
+.p2emojirun2 { 
+    top: 30%; left: 80%; 
+} 
+
+.p2emojirun3 { 
+    top: 17%; left: 55%; 
+} 
+
+.p2emojirun4 { 
+    top: 63%; left: 20%; 
+} 
+
+.p2emojirun5 { 
+    top: 45%; left: 75%;
+} 
+
+.p2emojirun6 { 
+    top: 74%; left: 84%; 
+} 
+
+.p3page { 
+    background-color: #FFECE8;
+    width: 100vw; 
+    height: 100vh;
+    margin: 0; 
+    display: none; 
+    position: relative;
+    overflow: hidden;
+}
+
+.p3no1 { 
+    top: 32%; left: 12%;
+}
+
+.p3no2 { 
+    top: 57%; left: 79%;
+}
+
+.p3no3 { 
+    top: 20%; left: 35%;
+}
+
+.p3no4 { 
+    top: 80%; left: 60%;
+}
+
+.p3no5 { 
+    top: 50%; left: 50%;
+}
+
+.p3no6 { 
+    top: 62%; left: 15%;
+}
+
+.p3q1content { 
+    top: 28%; left: 16%; 
+}
+
+.p3q2content { 
+    top: 52%; left: 73%; 
+}
+
+.p3q3content { 
+    top: 12%; left: 44%; 
+}
+
+.p3q4content { 
+    top: 72%; left: 66%; 
+}
+
+.p3q5content { 
+    top: 55%; left: 37%; 
+}
+
+.p3q6content { 
+    top: 77%; left: 5%; 
+}
+
+.p3answer1, .p3answer2, .p3answer3, .p3answer4, .p3answer5, .p3answer6 { 
+    width: 17vw; 
+    height: auto; 
+    background-color: white;
+    padding: 2vw; 
+    font-family: "Spline Sans Mono";
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126.667%;
+    display: none;
+    border-radius: 20px;
+    border: 2px solid #FF23A3;
+    position: absolute; 
+}
+
+.p3answer1 { 
+    width: 23vw;
+    top: 10%; left: 12%;  
+}
+
+.p3answer2 { 
+    top: 61%; left: 66%; 
+}
+
+.p3answer3 { 
+    top: 22%; left: 43%; 
+}
+
+.p3answer4 { 
+    width: 26vw; 
+    top: 47%; left: 33%; 
+}
+
+.p3answer5 { 
+    width: 21vw; 
+    top: 36%; left: 59%; 
+}
+
+.p3answer6 { 
+    width: 32vw; 
+    top: 43%; left: 2%; 
+}
+
+.type3 {
+    color: #0000; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    background: linear-gradient(#FF23A3 0%, #FF23A3 400%);
+    background-size: calc(var(--n) * 1ch) 400%;
+    background-repeat: no-repeat;
+    animation: typing calc(var(--n) * 0.08s) steps(var(--n)) forwards;
+}
+
+.clip3 {
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.p3emojirun1, .p3emojirun2, .p3emojirun3, .p3emojirun4, .p3emojirun5, .p3emojirun6 { 
+    display: none; 
+    width: 5vw; 
+    height: auto; 
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #FF23A3; 
+    position: absolute; 
+    font-size: 35px;
+    padding: 2vw; 
+    text-align: center;
+    position: absolute; 
+}
+
+.p3emojirun1 { 
+    top: 32%; left: 12%;
+}
+
+.p3emojirun2 { 
+    top: 57%; left: 79%;
+}
+
+.p3emojirun3 { 
+    top: 20%; left: 35%;
+}
+
+.p3emojirun4 { 
+    top: 80%; left: 60%;
+}
+
+.p3emojirun5 { 
+    top: 50%; left: 50%;
+}
+
+.p3emojirun6 { 
+    top: 62%; left: 15%;
+}
+
+.startdrag:hover { 
+    z-index: 1;
+    /* transition: .5s;  */
+}
+
+.startdrag { 
+    cursor: grab; 
+}

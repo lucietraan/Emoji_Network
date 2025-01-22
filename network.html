@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html> 
+    <head> 
+        <title> PJ2—Network </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+        <!-- Include updated jQuery UI -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css">
+    </head>
+    
+    <body> 
+        <div class = 'startpage' id = "starting"> 
+            <div class = 'pjname startdrag' id = 'startdrag'> Emojisphere! </div>
+            <div class = 'intro startdrag'> Is emoji a universal language? <br> 
+                <br> 
+                During this day and age, many of us use emojis, regardless of our cultural background and languages. It is a fun way to express emotions, a fascinating extension that goes what’s beyond what words could tell. <br> 
+                <br> 
+                But as individuals, our experiences influence what we see, hear, and read. And so, the mission of this project is to find out whether your cultural identity and languages have an effect on the way you interpret strings of emojis. Are emojis really universal? Does one emoji express the same thing across the world? What are the differences?  <br> 
+                <br> 
+                In the quest of searching for meaning(s) of emojis, welcome to Emojisphere! 
+            </div>
+            <div class = 'instruction startdrag' id = 'startdrag'> Choose one emoji to begin! 😈 Tabs are draggable btw!  </div>
+            <div class='emoji p1 startdrag' id='top1page'> 🌱</div>
+            <div class='emoji p2 startdrag' id="top2page"> 🦄 </div>
+            <div class='emoji p3 startdrag' id="top3page"> 🍑 </div>
+        </div>
+
+        <div class='p1page' id='firstpage'>
+
+            <div class="backtostart"> 
+                &lt;— Back to start! 
+            </div>
+
+            <!-- QUESTION 1 -->
+            <div class="question no1 startdrag" id="q1click"> ㊔ </div>
+
+            <div class="q1content startdrag"> 
+                <div id="closeq1"></div>
+                <br> 🌧 What’s your name? Can you tell me a brief introduction of yourself and your background? </div>
+
+            <div class="answer1 startdrag"> 
+                <div id="closea1"></div>  
+                <span class="type clip step" style="--n:101;"><br> 🌱 Hi, my name is Grace, I’m a graphic design student here at CCA. And I am 22 years old!</span>
+                 </div>
+
+            <div class="emojirun1 startdrag">
+                    <div id="closee1"></div>
+                    <span id="emoji-display1">👋</span>
+            </div>
+
+            <!-- QUESTION 2 -->
+            <div class="question no2 startdrag" id="q2click"> 🍊 </div>
+
+            <div class="q2content startdrag"> 
+                <div id="closeq2"></div>
+                <br> 🌧 How many languages do you speak? What are they? 
+            </div>
+
+            <div class='answer2 startdrag'> 
+                <div id="closea2"></div>  
+                <span class="type clip step" style="--n:123;"><br> 🌱 I speak Mandarin, Cantonese, and English. I learned a little bit of Spanish but uhm… not really fluent with it anymore. </span>
+            </div>
+
+            <div class="emojirun2 startdrag">
+                <div id="closee2"></div>
+                <span id="emoji-display2">🤔</span>
+            </div>
+
+            <!-- QUESTION 3 -->
+            <div class="question no3 startdrag" id="q3click"> 🪐 </div>
+            <div class='q3content startdrag'> 
+                <div id = "closeq3"></div>
+                <br> 
+                🌧  Emojis are regarded by many as a universal language, something that could be understood regardless of your languages. Do you think this is true? 
+            </div>
+
+            <div class = 'answer3 startdrag'> 
+                <div id='closea3'></div>
+                <span class="type clip step" style="--n:865;"> <br> 
+                    🌱 I think so… especially among younger generation. But then when it’s like across different generations. Like when I use emojis to talk to my parents, I think that’s when it doesn’t become a universal language. Because it would hint at the similar things but we might… the younger generation might have a different interpretation of it. It might be more sarcastic, but then for our parents, it’s just a nice, cute smiley face. I think there’s a lot of that. The younger generation uses emojis to add another meaning behind it. Especially with the, you know, peaches and what… the eggplant! Exactly, if I say that to my parents, they would just interpret it as an actual… like what it is. But… obviously, the young people, we kind of know it’s signaling something else. I think at some degree it is a universal language, but then… at some other degree, not really.
+                </span>
+            </div>
+
+            <div class="emojirun3 startdrag">
+                <div id="closee3"></div>
+                <span id="emoji-display3">🤔</span>
+            </div>
+
+            <!-- QUESTION 4 -->
+
+            <div class="question no4 startdrag" id="q4click"> 🥟 </div>
+            <div class='q4content startdrag'> 
+                <div id = "closeq4"></div>
+                <br> 
+                🌧 Among the languages that you speak, or the cultures you’ve been in contact with, do you think emojis are used and interpreted differently in different languages and culture? 
+            </div>
+
+            <div class='answer4 startdrag'> 
+                <div id="closea4"></div>  
+                <span class="type clip step" style="--n:574;"><br> 
+                    🌱 Hmm, I think… also, emojis… it depends on what system you’re using. People with android, or different… or even when you’re on different platforms, they have different customized emojis. I think like Weibo, which is like kinda Twitter of China, they have their own set of emojis. And some people use it as… like there are certain ones that people use a little bit more, that doesn’t have something equivalent in Apple. 
+                <br> <br> 
+                So I think there’s something about that, depending on what platform that each culture is dominantly using. There’s some differences across that. Yeah! </span>
+            </div>
+
+            <div class="emojirun4 startdrag">
+                <div id="closee4"></div>
+                <span id="emoji-display4">🤨</span>
+            </div>
+
+            <!-- QUESTION 5 -->
+            <div class="question no5 startdrag" id="q5click"> 👅 </div>
+            <div class='q5content startdrag'> 
+                <div id = "closeq5"></div>
+                <br> 
+                🌧 What’s your favourite expression, meme, or slang in your mother tongue? Try to explain it in emojis.
+            </div>
+
+            <div class='answer5 startdrag'> 
+                <div id="closea5"></div>  
+                <span class="type clip step" style="--n:660;"><br> 
+                    🌱 Huh… I feel like I need to think a little bit through this. 
+                    <br> <br> 
+                    Oh, there’s one called “得闲饮茶”, which is like “if you’re free, let’s drink some tea”. Cause Cantonese speaking people, they have tea with their dimsum, they have tea with… like just in their daily life! It’s telling people to like, relax, and then if you have free time, come hang out! 
+                    <br> <br> 
+                    I feel like would use this, the green tea emoji, but then I would also use one that’s like… I don’t know, what makes me look kinda free and relaxed? Hmm, let’s go through some faces… Sunglasses, maybe? Uhm… haha, I want to use this. I think it’s like acting cute. 
+                    <br> <br> 
+                    When you’re free, come drink tea with me! </span>
+            </div>
+
+            <div class="emojirun5 startdrag">
+                <div id="closee5"></div>
+                <span id="emoji-display5">🧐</span>
+            </div>
+
+            <!-- QUESTION 6 -->
+            <div class="question no6 startdrag" id="q6click"> ✍️ </div>
+            <div class='q6content startdrag'> 
+                <div id = "closeq6"></div>
+                <br> 
+                🌧 I have a story written in emojis here. Can you try to translate it? 👧🏼➡️🐇🏃‍♀️🕳️ ⬇️🌍🎩🐛🫖🍄 👧🏼🔄⬆️⬇️😱👑❤️ 👧🏼⚖️👑➡️💭💤
+            </div>
+
+            <div class='answer6 startdrag'> 
+                <div id="closea6"></div>  
+                <span class="type clip step" style="--n:657;"><br> 
+                🌱 A girl is going to a rabbit hole? And then, I went down to… (long pause)… I want to say that this is Africa. I went down to Africa and play magic, with caterpillar?! And tea… Bug… Caterpillar, tea, and mushroom. And then… I turned around and went upside down, and got really scared, but I’m a Queen, and I love… I have a big heart. So I weighed… the crown? This is a scale right? So I weighed the crown, and then I went back to sleep?! 
+                <br> <br> 
+                (Alice in Wonderland revealed) 
+                <br> <br> 
+                Oh hahahaa, okay, yeah yeah. Oh this is the Queen of heart. I see, I see. Oh, the court! What did I even say? </span>
+            </div>
+
+            <div class="emojirun6 startdrag">
+                <div id="closee6"></div>
+                <span id="emoji-display6">🧐</span>
+            </div>
+
+        </div>
+        <div class='p2page' id = 'secondpage'>  
+
+            <div class="backtostart2"> 
+                &lt;— Back to start! 
+            </div>
+
+            <!-- QUESTION 1 -->
+            <div class="p2question p2no1 startdrag" id="p2q1click"> 👀 </div>
+
+            <div class="p2q1content startdrag"> 
+                <div id="p2closeq1"></div>
+                <br> 🌧 What’s your name? Can you tell me a brief introduction of yourself and your background? 
+            </div>
+
+            <div class='p2answer1 startdrag'> 
+                <div id="closep2a1"></div>  
+                <span class="type2 clip2 step" style="--n:246;"><br> 
+                    🦄 My name is Andrea Manrique and I am from South America. I use a lot of emojis, but when I was younger, I kinda hated them, so I kind of grew to love them. I figured out why they existed. So my feelings towards them have changed a lot. Yeah. </span>
+            </div>
+
+            <div class="p2emojirun1 startdrag">
+                <div id="p2closee1"></div>
+                <span id="p2emoji-display1">🙋‍♀️</span>
+            </div>
+
+            <!-- QUESTION 2 -->
+            <div class="p2question p2no2 startdrag" id="p2q2click"> ✌️ </div>
+
+            <div class="p2q2content startdrag"> 
+                <div id="p2closeq2"></div>
+                <br> 🌧 How many languages do you speak? What are they? 
+            </div>
+
+            <div class='p2answer2 startdrag'> 
+                <div id="closep2a2"></div>  
+                <span class="type2 clip2 step" style="--n:54;"><br> 
+                    🦄 I speak two languages! I speak English and Spanish. </span>
+            </div>
+
+            <div class="p2emojirun2 startdrag">
+                <div id="p2closee2"></div>
+                <span id="p2emoji-display2">😄</span>
+            </div>
+
+            <!-- QUESTION 3 -->
+            <div class="p2question p2no3 startdrag" id="p2q3click"> 🌎 </div>
+
+            <div class="p2q3content startdrag"> 
+                <div id="p2closeq3"></div>
+                <br> 🌧 Emojis are regarded by many as a universal language, something that could be understood regardless of your languages. Do you think this is true?  
+            </div>
+
+            <div class='p2answer3 startdrag'> 
+                <div id="closep2a3"></div>  
+                <span class="type2 clip2 step" style="--n:354;"><br> 
+                    🦄 I think there’s something universal about it. But I think for a lot of emojis, they have the meaning that we put into them. Like I know the skull emoji might have just been intended to be just a skull, or like spooky, but now it just means that you’re laughing. So I think it’s a bit cultural, but since it’s technology, that makes it more universal.  </span>
+            </div>
+
+            <div class="p2emojirun3 startdrag">
+                <div id="p2closee3"></div>
+                <span id="p2emoji-display3">🤔</span>
+            </div>
+
+            <!-- QUESTION 4 -->
+            <div class="p2question p2no4 startdrag" id="p2q4click"> 🧠 </div>
+
+            <div class="p2q4content startdrag"> 
+                <div id="p2closeq4"></div>
+                <br> 🌧 Among the languages that you speak, or the cultures you’ve been in contact with, do you think emojis are used and interpreted differently in different languages and culture?  
+            </div>
+
+            <div class='p2answer4 startdrag'> 
+                <div id="closep2a4"></div>  
+                <span class="type2 clip2 step" style="--n:237;"><br> 
+                    🦄 I think I use emojis, language-wise, I use them the same. I use them very similarly in English and Spanish. I think it might just be more of a generational expression, since I definitely use different emojis for my mom or my friends.  </span>
+            </div>
+
+            <div class="p2emojirun4 startdrag">
+                <div id="p2closee4"></div>
+                <span id="p2emoji-display4">🤔</span>
+            </div>
+
+            <!-- QUESTION 5 -->
+            <div class="p2question p2no5 startdrag" id="p2q5click"> 🥰 </div>
+
+            <div class="p2q5content startdrag"> 
+                <div id="p2closeq5"></div>
+                <br> 🌧 What’s your favourite expression, meme, or slang in your mother tongue? Try to explain it in emojis.
+            </div>
+
+            <div class='p2answer5 startdrag'> 
+                <div id="closep2a5"></div>  
+                <span class="type2 clip2 step" style="--n:550;"><br> 
+                    🦄 The first thing that came to mind is like “epale”, which is like I guess it would be like “howdy”. Like a weird way of saying hello. But that’s probably not… well, I think it’s just a different way of saying hello in Spanish that’s fun… Also “chevere”, a very Venezuelan word, which means like “awesome”, or “alright”, or “okay”. It just means good. 
+                    <br> <br> 
+                    I feel like in emojis that would be the guy with the sunglasses and the thumbs up. I always use yellow, I disagree with using skin tone in emojis… 
+                     </span>
+            </div>
+
+            <div class="p2emojirun5 startdrag">
+                <div id="p2closee5"></div>
+                <span id="p2emoji-display5">🧐</span>
+            </div>
+
+            <!-- QUESTION 6 -->
+            <div class="p2question p2no6 startdrag" id="p2q6click"> 🔖 </div>
+
+            <div class="p2q6content startdrag"> 
+                <div id="p2closeq6"></div>
+                <br>
+                🌧 I have a story written in emojis here. Can you try to translate it? 👧🏼➡️🐇🏃‍♀️🕳️ ⬇️🌍🎩🐛🫖🍄 👧🏼🔄⬆️⬇️😱👑❤️ 👧🏼⚖️👑➡️💭💤
+            </div>
+
+            <div class='p2answer6 startdrag'> 
+                <div id="closep2a6"></div>  
+                <span class="type2 clip2 step" style="--n:589;"><br> 
+                    🦄 Okay, so that… immediately, that’s Alice in Wonderland. That’s Alice, sees the rabbit and she follows it down the hole… she follows it to a hole. She falls down and she travels, and she meets the Mad Hatter, and she sees the caterpillar that smokes a lot. And she sees that they’re having a tea party, and then… Alice changes, she grows and she shrinks, and she’s surprised. Then, she meets the Queen of Hearts. And then Alice, has to make a decision, and then she wakes up. 
+                    <br> <br> 
+                    No, I don’t remember the last part. Oh she painted the roses!
+                     </span>
+            </div>
+
+            <div class="p2emojirun6 startdrag">
+                <div id="p2closee6"></div>
+                <span id="p2emoji-display6">😅</span>
+            </div>
+
+        </div>
+        <div class='p3page' id = 'thirdpage'> 
+
+            <div class="backtostart3"> 
+                &lt;— Back to start! 
+            </div>
+
+            <!-- QUESTION 1 -->
+            <div class="p3question p3no1 startdrag" id="p3q1click"> 🎊 </div>
+
+            <div class="p3q1content startdrag"> 
+                <div id="p3closeq1"></div>
+                <br> 🌧 What’s your name? Can you tell me a brief introduction of yourself and your background? 
+            </div>
+
+            <div class='p3answer1 startdrag'> 
+                <div id="closep3a1"></div>  
+                <span class="type3 clip3 step" style="--n:490;"><br> 
+                    🍑 Hi, my name is Dat. I’m 21 years old, and I’m currently a senior at the Foreign Trade University. I was born and raised in Hanoi, a very vibrant city in Vietnam, so I think I got the chance to be exposed to the more modern culture aspect of Vietnam. More specifically, I was born and raised in the Old Quarter area of Hanoi, so I got to be exposed to… to both… how should I put it? Both the old and the new culture, so there’s sort of a mix of traditional and modern culture where I am. </span>
+            </div>
+
+            <div class="p3emojirun1 startdrag">
+                <div id="p3closee1"></div>
+                <span id="p3emoji-display1">🤔</span>
+            </div>
+
+            <!-- QUESTION 2 -->
+            <div class="p3question p3no2 startdrag" id="p3q2click"> ⚡️ </div>
+            <div class="p3q2content startdrag"> 
+                <div id="p3closeq2"></div>
+                <br> 🌧 How many languages do you speak? What are they?
+            </div>
+
+            <div class='p3answer2 startdrag'> 
+                <div id="closep3a2"></div>  
+                <span class="type3 clip3 step" style="--n:110;"><br> 
+                    🍑 I am a multilingual queen. I speak Vietnamese and English. And… yeah. I’m a professional in both languages!  </span>
+            </div>
+
+            <div class="p3emojirun2 startdrag">
+                <div id="p3closee2"></div>
+                <span id="p3emoji-display2">💅</span>
+            </div>
+
+            <!-- QUESTION 3 -->
+            <div class="p3question p3no3 startdrag" id="p3q3click"> 🦄 </div>
+            <div class="p3q3content startdrag"> 
+                <div id="p3closeq3"></div>
+                <br> 🌧 Emojis are regarded by many as a universal language, something that could be understood regardless of your languages. Do you think this is true? 
+            </div>
+
+            <div class='p3answer3 startdrag'> 
+                <div id="closep3a3"></div>  
+                <span class="type3 clip3 step" style="--n:290;"><br> 
+                    🍑 I do think that it is a “common language”, a universal language. But there are still some cases where emojis can be interpreted differently among culture. So overall, yes, but there are exceptions. Since emojis are supposed to describe our feelings, our emotions, so yeah, I think… yeah. </span>
+            </div>
+
+            <div class="p3emojirun3 startdrag">
+                <div id="p3closee3"></div>
+                <span id="p3emoji-display3">🤔</span>
+            </div>
+
+            <!-- QUESTION 4 -->
+            <div class="p3question p3no4 startdrag" id="p3q4click"> ✨ </div>
+            <div class="p3q4content startdrag"> 
+                <div id="p3closeq4"></div>
+                <br> 🌧 Among the languages that you speak, or the cultures you’ve been in contact with, do you think emojis are used and interpreted differently in different languages and culture? 
+            </div>
+
+            <div class='p3answer4 startdrag'> 
+                <div id="closep3a4"></div>  
+                <span class="type3 clip3 step" style="--n:664;"><br> 
+                    🍑 Well, most of them, I think? Most of them are used to… describe our thinking. But as I said, there are exceptions. For example, in Vietnam, the smiley emoji stands for sarcasm, sort of like “bitch, what do you mean?” But in other cultures… I have some Korean friends who use the smiley emoji a lot, but they… So that’s the difference. In Vietnam, it could mean something like sarcasm. But for Koreans, it means that they’re actually smiling. That’s one example that I could think of right now. 
+                    <br> <br> 
+                    Actually, I think that’s really special. In other cultures, mostly, the smiley face means you’re actually happy, but only in Vietnam, it is interpreted differently. </span>
+            </div>
+
+            <div class="p3emojirun4 startdrag">
+                <div id="p3closee4"></div>
+                <span id="p3emoji-display4">🤨</span>
+            </div>
+
+            <!-- QUESTION 5 -->
+            <div class="p3question p3no5 startdrag" id="p3q5click"> 💖 </div>
+            <div class="p3q5content startdrag"> 
+                <div id="p3closeq5"></div>
+                <br> 🌧 What’s your favourite expression, meme, or slang in your mother tongue? Try to explain it in emojis. 
+            </div>
+
+            <div class='p3answer5 startdrag'> 
+                <div id="closep3a5"></div>  
+                <span class="type3 clip3 step" style="--n:454;"><br> 
+                    🍑 Maybe… oh! Not quite… I usually say “vậy đi”… Wow I feel like I’m so out of touch with the Vietnamese culture right now. It’s used to end something like… like if we’re doing something and something comes up, I’ll say “vậy đi”, like “ignore it, I don’t care anymore”. 
+                    <br> <br>
+                    Translate into emoji? Nooo… I don’t think I can translate it into emoji. But I guess I’ll use. That’s basically it, right?! Like okayy. </span>
+            </div>
+            
+            <div class="p3emojirun5 startdrag">
+                <div id="p3closee5"></div>
+                <span id="p3emoji-display5">😅</span>
+            </div>
+
+            <!-- QUESTION 6 -->
+            <div class="p3question p3no6 startdrag" id="p3q6click"> 📝 </div>
+            <div class="p3q6content startdrag"> 
+                <div id="p3closeq6"></div>
+                <br> 🌧 I have a story written in emojis here. Can you try to translate it? 👧🏼➡️🐇🏃‍♀️🕳️ ⬇️🌍🎩🐛🫖🍄 👧🏼🔄⬆️⬇️😱👑❤️ 👧🏼⚖️👑➡️💭💤
+            </div>
+
+            <div class='p3answer6 startdrag'> 
+                <div id="closep3a6"></div>  
+                <span class="type3 clip3 step" style="--n:782;"><br> 
+                    🍑 So… a dumb blonde followed a white rabbit, and then she fell into a hole. What is that…? And then she turned into a woman? And then she fell… into Africa?! This is Africa, right?? And then… she picked up a hat, and then she saw some worms inside. Then, she drank some tea and turned into a mushroom. And then, uhm… somehow she turned back into a blonde girl again. And then, she… what is that? What is that circle? Uhm, is it… she goes around, goes up, down, and she screams, because she saw a queen of heart. Then, she… like… she fights for justice and then she was crowned the queen, and realized it was all a dream. 
+                    <br> <br> 
+                    Oh, this is Alice in Wonderland, but… I just don’t remember the plot of it. I knew it was Alice in Wonderland! </span>
+            </div>
+
+            <div class="p3emojirun6 startdrag">
+                <div id="p3closee6"></div>
+                <span id="p3emoji-display6">🤔</span>
+            </div>
+
+        </div>
+
+        
+        
+    </body>
+    <script src="script.js"></script>
+</html>
+
